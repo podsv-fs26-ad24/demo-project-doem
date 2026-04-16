@@ -131,9 +131,10 @@ The setting `execute: freeze: auto` in `_quarto.yml` ensures that Python computa
 
 The `_freeze` directory and the workflow file `.github/workflows/publish.yml` should already be tracked in the repository.
 
-
 #### Publishing Updates
 
 1. Build the website locally: `uv run quarto render` from the `docs` folder. This updates `docs/build` (gitignored) and `docs/_freeze` (checked in)
 2. Check the website locally by opening `docs/build/index.html`
 3. Commit and push all updated files (including `docs/_freeze`) to `main`. The GitHub Actions workflow will render and deploy the site automatically
+
+
